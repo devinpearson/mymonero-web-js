@@ -24,7 +24,7 @@
 
 See `LICENSE.txt` for license.
 
-All app source code and assets copyright © 2014-2019 by MyMonero. All rights reserved.
+All app source code and assets copyright © 2014-2020 by MyMonero. All rights reserved.
 
 
 ## Downloads
@@ -43,7 +43,7 @@ To get set up with the source code, please see **Getting the Source Code** below
 
 ## Reporting Bugs & Making Feature Requests
 
-If you would like to report an issue or share a feature request, please create a Github [Issue](https://github.com/mymonero/monero-app-js/issues) on this project.
+If you would like to report an issue or share a feature request, please create a Github [Issue](https://github.com/mymonero/monero-web-js/issues) on this project.
 
 If you're reporting a bug, be sure to include all information which we would need to reproduce the issue, such as the operating system and app version on which you saw the bug, and the steps you took, if you can tell. 
 
@@ -63,19 +63,13 @@ Please don't use the Issues tracker for general support or inquiries. You can al
 
 3. (To get the bleeding edge, and/or if you are going to make changes) Switch to the `develop` branch by executing `git checkout develop`.
 
-4. **NEW** Be sure to set up and download all required Git submodules with `bin/update_submodules`. 
-
-	* Note: At present, run this command after pulling this repo as necessary to keep all sub-modules up-to-date. 
-
-5. Install all required `node_modules` by executing `npm install`.
+4. Install all required `node_modules` by executing `npm install`.
 
 
 ## Repo Contents Overview
-* Executable scripts for common tasks are located in `bin/`
-
 * Local, application source code is located in `local_modules/`. This includes bundled/static third-party "Vendor" libraries such as [EmojiOne](http://emojione.com).
 
-* After installation, non-bundled third-party modules (such as Electron) will be located in `node_modules/`.
+* After installation, non-bundled third-party modules will be located in `node_modules/`.
 
 * App package and build process info is located in `package.json`.
 
@@ -91,7 +85,7 @@ If you want to run the browser build which is provided in the releases, simply u
 
 ### Browser (Web wallet)
 
-`bin/start_dev_browser`
+`npm run start`
 
 *Note:* This will run the command `python -m SimpleHTTPServer 9100` to serve `./browser_build`. After this command completes, open your browser of choice and navigate to `http://localhost:9100`.
 
